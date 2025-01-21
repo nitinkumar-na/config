@@ -1,0 +1,9 @@
+# Few Useful Shortcuts
+
+### Aliases
+alias c='clear'
+alias k='kubectl'
+alias kgp='k get po -nsde'
+alias kgd='k get deploy -nsde'
+alias kgp='k get cronjob -nsde'
+alias kgp='k get po'
