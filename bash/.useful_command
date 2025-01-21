@@ -7,3 +7,5 @@ alias kgp='k get po -nsde'
 alias kgd='k get deploy -nsde'
 alias kgp='k get cronjob -nsde'
 alias kgp='k get po'
+
+echo "Hello, Your settings for the terminal have been loaded."; 
