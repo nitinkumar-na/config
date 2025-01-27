@@ -3,9 +3,26 @@
 ### Aliases
 alias c='clear'
 alias k='kubectl'
-alias kgp='k get po -nsde'
-alias kgd='k get deploy -nsde'
-alias kgp='k get cronjob -nsde'
+alias kgp='k get po'
+alias kgd='k get deploy'
+alias kgcj='k get cronjob'
+alias kgsa='k get sa'
 alias kgp='k get po'
 
 echo "Hello, Your settings for the terminal have been loaded."; 
+
+kubectl() {
+    local args=("$@")
+    if [[ ! " ${args[*]} " =~ " -n " ]]; then
+        args+=("-n" "sde")
+    fi
+    command kubectl "${args[@]}"
+}
+
+k() {
+    local args=("$@")
+    if [[ ! " ${args[*]} " =~ " -n " ]]; then
+        args+=("-n" "sde")
+    fi
+    command k "${args[@]}"
+}
