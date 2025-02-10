@@ -6,6 +6,7 @@ alias k='kubectl'
 alias kgp='k get po'
 alias kgd='k get deploy'
 alias kgcj='k get cronjob'
+alias kgcm='k get cm'
 alias kgsa='k get sa'
 alias kgp='k get po'
 
