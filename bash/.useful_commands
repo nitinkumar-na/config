@@ -1,14 +1,21 @@
 # Few Useful Shortcuts
 
 ### Aliases
+### Aliases
+alias nk='nkdev'
 alias c='clear'
 alias k='kubectl'
 alias kgp='k get po'
+alias kpg='k get po'
 alias kgd='k get deploy'
 alias kgcj='k get cronjob'
 alias kgcm='k get cm'
 alias kgsa='k get sa'
-alias kgp='k get po'
+alias kl='k logs'
+alias kdp='k describe pod'
+alias ked='k edit deploy'
+alias kecm='k edit cm'
+alias krrd='k rollout restart deploy'
 
 echo "Hello, Your settings for the terminal have been loaded."; 
 
